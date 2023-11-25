@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+  <title><%- title %></title>
+</head>
+<body>
+  <%- body %>
+  <audio controls muted id="myAudio" hidden>
+    <source src="/assets/backsound.mp3" type="audio/mpeg">
+  </audio>
+</body>
+<script>
+  function toggleMute() {
+    var audio = document.getElementById("myAudio");
+    audio.play()
+    
+    if (audio.muted) {
+      audio.muted = false;
+    } else {
+      audio.muted = true;
+    }
+  }
+
+  /* Reveal Animation*/
+    let sr = ScrollReveal({ duration: 2500, distance: "60px", });
+
+    sr.reveal(".section-1 .inside", { origin: "bottom", delay:200, duration: 900 });
+    sr.reveal(".wr", { origin: "bottom", delay:400, duration: 900 });
+    sr.reveal(".card", { origin: "bottom", delay:200, duration: 900 });
+    sr.reveal("iframe", { origin: "bottom", delay:300, duration: 900 });
+    sr.reveal("#pic1", { origin: "left", delay:500, duration: 900 });
+    sr.reveal("#pic2", { origin: "right", delay:500, duration: 900 });
+    sr.reveal(".section-5 img", { origin: "bottom", delay:600, duration: 900 });
+    sr.reveal(".section-6", { origin: "bottom", delay:200, duration: 900 });
+</script>
+</html>

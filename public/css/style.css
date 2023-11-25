@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Poppins:wght@400;500;600&display=swap');
+
+/* GENERAL STYLING */
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  --orange: #FF8036;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* REUSABLE CSS CODE */
+.container{
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.flex{
+  display: flex;
+}
+
+.jc-sb{
+  justify-content: space-between;
+}
+
+.ai-center{
+  align-items: center;
+}
+
+/* SECTION 1 STYLING */
+.section-1{
+  position: relative;
+}
+
+.section-1:before{
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  background-image: url('/assets/jean-carlo-emer-3U7SJ2YRDcs-unsplash.jpg');
+  width: 100%;
+  height: 665px;
+  background-position: bottom;
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+.section-1 .inside{
+  height: 665px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.section-1 h1{
+  font-family: 'Arizonia', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.section-1 p{
+  font-size: .8rem;
+  line-height: 1.8;
+}
+
+.section-1 .btn{
+  color: wheat;
+  font-size: .8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  padding: .8rem 1.2rem;
+  border-radius: 10px;
+  background: orange;
+  transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.section-1 .btn:hover{
+  background: rgb(255, 145, 0);
+}
+
+/* SECTION 2 STYLING */
+.section-2{
+  height: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.section-2 h1{
+  font-family: 'Arizonia', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.section-2 p{
+  margin: 0 1.5rem;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  color: grey;
+}
+
+.section-2 h2{
+  margin: -.5rem 0 .6rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.section-2 .pic img{
+  width: 130px;
+  height: 130px;
+  margin-top: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.section-2 .pic p{
+  font-family: 'Arizonia', cursive;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  color: #FF8036;
+}
+
+/* SECTION 3 STYLING */
+.section-3{
+  position: relative;
+}
+
+.section-3:before{
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  background-image: url('/assets/aniket-salve-wGpCS_vizk4-unsplash.jpg');
+  width: 100%;
+  height: 995px;
+  background-position: bottom;
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+.section-3 .inside{
+  height: 995px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.section-3 .inside h1{
+  font-family: 'Arizonia', cursive;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.section-3 .inside p{
+  margin-top: 1rem;
+  font-size: .7rem;
+  color: rgb(224, 224, 224);
+}
+
+.section-3 .card{
+  margin-top: 2rem;
+  padding: 1.2rem 1rem 2.2rem 1rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.432);
+  border: 1px solid white;
+}
+
+.section-3 .card h1{
+  padding-bottom: .6rem;
+  font-size: 1rem;
+  font-stretch: 150%;
+  border-bottom: 1px dashed white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-3 .card .btn{
+  font-size: .8rem;
+  background: orange;
+  color: white;
+  border-radius: 8px;
+  padding: .8rem 1.5rem;
+  transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.section-3 .card .btn:hover{
+  background: rgb(255, 145, 0);
+}
+
+.section-3 .card .box{
+  margin: 2rem 0 1rem 0;
+}
+
+.section-3 .card .box i{
+  font-size: 3rem;
+}
+
+.section-3 .card .box p{
+  margin-top: 0;
+}
+
+/* SECTION 4 STYLING */
+.section-4{
+  height: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.section-4 h1{
+  font-family: 'Arizonia', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.section-4 p{
+  margin: 0 1.5rem;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  color: grey;
+}
+
+/* SECTION 5 STYLING */
+.section-5{
+  position: relative;
+}
+
+.section-5:before{
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  background-image: url('/assets/aniket-salve-wGpCS_vizk4-unsplash.jpg');
+  width: 100%;
+  height: 1395px;
+  background-position: bottom;
+  background-size: cover;
+  filter: brightness(50%);
+}
+
+.section-5 .inside{
+  height: 1395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.section-5 .inside h1{
+  font-family: 'Arizonia', cursive;
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.section-5 .inside p{
+  margin-top: 1rem;
+  font-size: .7rem;
+  color: rgb(224, 224, 224);
+}
+
+.section-5 .inside img{
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-top: 1.2rem;
+}
+
+/* SECTION 6 STYLING */
+.section-6{
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.section-6 h1{
+  font-family: 'Arizonia', cursive;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.section-6 p{
+  margin: 0 1.2rem;
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  color: grey;
+}
+
+.section-6 img{
+  width: 100px;
+}
+
+.section-6 a{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: .8rem 6.3rem;
+  color: wheat;
+  border-radius: 8px;
+  background: #FF8036;
+  transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.section-6 a:hover{
+  background: #ff6912;
+}
+
+.scrollBtn {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  border: none;
+  bottom: 20px;
+  left: 20px;
+  margin-left: calc(100vw - 80px);
+  z-index: 999;
+  transition: all 0.2s ease;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
