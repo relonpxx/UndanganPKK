@@ -52,14 +52,14 @@ a{
   left: 0;
   background-image: url('/assets/jean-carlo-emer-3U7SJ2YRDcs-unsplash.jpg');
   width: 100%;
-  height: calc(100vh - 0px);
+  height: calc(100vh - 45px);
   background-position: bottom;
   background-size: cover;
   filter: brightness(50%);
 }
 
 .section-1 .inside{
-  height: calc(100vh - 0px);
+  height: calc(100vh - 45px);
   display: flex;
   flex-direction: column;
   justify-content: center;
