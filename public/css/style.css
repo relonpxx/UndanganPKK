@@ -59,7 +59,7 @@ a{
 }
 
 .section-1 .inside{
-  height: calc(100vh - 45px);
+  height: calc(100vh - 65px);
   display: flex;
   flex-direction: column;
   justify-content: center;
